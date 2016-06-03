@@ -41,6 +41,7 @@ public static String constructJSON(String tag, boolean status) {
  * @param status
  * @param err_msg
  * @return
+ * ===
  */
 public static String constructJSON(String tag, boolean status, String err_msg) {
 	JSONObject obj = new JSONObject();
@@ -49,7 +50,7 @@ public static String constructJSON(String tag, boolean status, String err_msg) {
 		obj.put("status", new Boolean(status));
 		obj.put("err_msg", err_msg);
 	} catch (JSONException e ) {
-		// TODO Auto-generate catch block
+		
 	}
 	return obj.toString();
   }
